@@ -26,9 +26,20 @@ export default function Booking() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    const { name, phone, service, date, time } = formData;
+    
+    // Construct WhatsApp Message
+    const message = `Hello iSalon! I would like to book an appointment.%0A%0A*Booking Details:*%0AName: ${name}%0APhone: ${phone}%0AService: ${service}%0ADate: ${date}%0ATime: ${time}%0A%0AThank you!`;
+    
+    // Redirect to WhatsApp
+    window.open(`https://wa.me/919902508399?text=${message}`, "_blank");
+    
     setSubmitted(true);
-    // In production, this would send to an API
-    setTimeout(() => setSubmitted(false), 4000);
+    setTimeout(() => {
+      setSubmitted(false);
+      setFormData({ name: "", phone: "", service: "", date: "", time: "" });
+    }, 4000);
   };
 
   const inputStyles =
