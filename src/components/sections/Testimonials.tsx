@@ -132,14 +132,8 @@ export default function Testimonials() {
                   </p>
                   <div>
                     <p
-                      className="font-semibold text-sm tracking-wide"
+                      className="font-semibold text-xs tracking-wider uppercase"
                       style={{ color: "var(--color-charcoal)" }}
-                    >
-                      {t.name}
-                    </p>
-                    <p
-                      className="text-xs mt-1 tracking-wider uppercase"
-                      style={{ color: "var(--color-gold)" }}
                     >
                       {t.service}
                     </p>
