@@ -50,7 +50,7 @@ export default function Team() {
             {/* Image */}
             <div className="relative aspect-square md:aspect-auto group overflow-hidden">
               <Image
-                src="/images/stylist.png"
+                src="/images/hemarai.jpg"
                 alt="Hema Rai — Lead Stylist at iSalon"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
