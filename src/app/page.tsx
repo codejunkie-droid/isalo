@@ -12,6 +12,7 @@ import SignatureExperience from "@/components/sections/SignatureExperience";
 import Testimonials from "@/components/sections/Testimonials";
 import Team from "@/components/sections/Team";
 import Gallery from "@/components/sections/Gallery";
+import PromoOffer from "@/components/sections/PromoOffer";
 import Booking from "@/components/sections/Booking";
 import Contact from "@/components/sections/Contact";
 
@@ -43,6 +44,7 @@ export default function Home() {
           <Testimonials />
           <Team />
           <Gallery />
+          <PromoOffer />
           <Booking />
           <Contact />
         </main>

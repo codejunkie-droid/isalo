@@ -5,11 +5,11 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 
 const gallery = [
+  { type: "image", src: "/images/studio picture1.jpeg", alt: "Double studio view", label: "Studio" },
+  { type: "video", src: "/images/salon-video-2.mp4", alt: "Nail art process", label: "Artistry" },
   { type: "image", src: "/images/salon-1.jpg", alt: "Luxury salon interior", label: "Studio" },
-  { type: "video", src: "/images/salon-video-1.mp4", alt: "Salon experience video", label: "Experience" },
   { type: "image", src: "/images/nailart-1.jpg", alt: "Premium nail art design", label: "Nail Art" },
   { type: "image", src: "/images/treatment-1.jpg", alt: "Professional treatment session", label: "Lash & Brows" },
-  { type: "video", src: "/images/salon-video-2.mp4", alt: "Nail art process", label: "Artistry" },
   { type: "image", src: "/images/nailart-2.jpg", alt: "Elegant manicure", label: "Nail Art" },
   { type: "image", src: "/images/salon-2.jpg", alt: "Modern salon station", label: "Studio" },
   { type: "image", src: "/images/nailart-3.jpg", alt: "Custom nail design", label: "Nail Art" },

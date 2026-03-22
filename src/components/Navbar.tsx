@@ -44,11 +44,12 @@ export default function Navbar() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="relative w-10 h-10 md:w-12 md:h-12 overflow-hidden rounded-full border border-[var(--color-gold)]">
+            <div className="relative w-10 h-10 md:w-12 md:h-12 overflow-hidden rounded-full border border-[var(--color-gold)] bg-[var(--color-charcoal)]">
               <img
-                src="/images/isalon-logo.jpg"
+                src={scrolled ? "/images/logo3.jpeg" : "/images/logo2.jpeg"}
                 alt="iSalon Logo"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                style={{ mixBlendMode: scrolled ? 'multiply' : 'screen' }}
               />
             </div>
             <div className="flex flex-col">

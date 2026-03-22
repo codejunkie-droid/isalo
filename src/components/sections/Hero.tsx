@@ -9,25 +9,16 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Video/Image */}
-      <div className="absolute inset-0 z-0 select-none">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/images/hero-video.mp4" type="video/mp4" />
-          <Image
-            src="/images/hero.png"
-            alt="iSalon luxury interior"
-            fill
-            className="object-cover"
-            priority
-            quality={90}
-          />
-        </video>
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/hero.png"
+          alt="iSalon luxury interior"
+          fill
+          className="object-cover"
+          priority
+          quality={90}
+        />
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-[var(--color-cream)]" />
       </div>

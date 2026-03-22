@@ -12,9 +12,10 @@ export default function Footer() {
           <div className="flex flex-col items-start gap-4">
             <div className="relative w-16 h-16 overflow-hidden rounded-full border border-[var(--color-gold)]/30">
               <img
-                src="/images/isalon-logo.jpg"
+                src="/images/logo2.jpeg"
                 alt="iSalon Logo"
                 className="w-full h-full object-cover"
+                style={{ mixBlendMode: 'screen' }}
               />
             </div>
             <div>
