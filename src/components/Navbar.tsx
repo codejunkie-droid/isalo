@@ -43,35 +43,13 @@ export default function Navbar() {
       >
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 group">
-            <div className="relative w-10 h-10 md:w-12 md:h-12 overflow-hidden rounded-full border border-[var(--color-gold)] bg-[var(--color-charcoal)]">
-              <img
-                src={scrolled ? "/images/logo3.jpeg" : "/images/logo2.jpeg"}
-                alt="iSalon Logo"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                style={{ mixBlendMode: scrolled ? 'multiply' : 'screen' }}
-              />
-            </div>
-            <div className="flex flex-col">
-              <span
-                className="text-lg md:text-xl tracking-[0.15em] leading-none"
-                style={{
-                  fontFamily: "var(--font-serif)",
-                  color: "var(--color-charcoal)",
-                }}
-              >
-                iSalon
-              </span>
-              <span
-                className="text-[0.45rem] tracking-[0.2em] uppercase mt-1"
-                style={{
-                  fontFamily: "var(--font-sans)",
-                  color: "var(--color-gold)",
-                }}
-              >
-                ಇಸಲೋನ್
-              </span>
-            </div>
+          <a href="#" className="flex items-center group">
+            <img
+              src={scrolled ? "/images/logo3.jpeg" : "/images/logo2.jpeg"}
+              alt="iSalon Logo"
+              className="h-10 md:h-12 w-auto object-contain group-hover:opacity-80 transition-all duration-500"
+              style={{ mixBlendMode: scrolled ? 'multiply' : 'screen' }}
+            />
           </a>
 
           {/* Desktop Nav */}
