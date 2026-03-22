@@ -26,7 +26,7 @@ export default function Footer() {
               className="text-xs leading-relaxed max-w-xs"
               style={{ color: "var(--color-warm-gray)" }}
             >
-              Indiranagar&apos;s premier luxury salon experience. Proudly women-owned.
+              Indiranagar&apos;s premier luxury salon experience.
             </p>
           </div>
 

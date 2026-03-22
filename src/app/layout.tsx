@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "premium nail art studio",
     "best bridal makeup Bangalore",
     "top hair stylists in Bangalore",
-    "women-owned salon",
+    "founder mr sanjay",
     "iSalon",
   ],
   alternates: {

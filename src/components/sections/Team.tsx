@@ -65,7 +65,7 @@ export default function Team() {
                 className="text-[0.6rem] font-semibold tracking-[0.25em] uppercase mb-4"
                 style={{ color: "var(--color-gold)" }}
               >
-                Lead Stylist & Founder
+                Lead Stylist
               </span>
               <h3
                 className="text-2xl md:text-3xl mb-4"

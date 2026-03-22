@@ -33,20 +33,6 @@ export default function About() {
               className="absolute -bottom-6 -right-6 w-32 h-32 rounded-2xl -z-10"
               style={{ background: "var(--color-nude)" }}
             />
-            {/* Women-Owned Badge */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={inView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="absolute -bottom-4 left-8 glass px-5 py-3 rounded-xl shadow-lg"
-            >
-              <p
-                className="text-[0.65rem] font-semibold tracking-[0.15em] uppercase"
-                style={{ color: "var(--color-gold)" }}
-              >
-                ♀ Women-Owned Business
-              </p>
-            </motion.div>
           </motion.div>
 
           {/* Text */}
@@ -68,8 +54,8 @@ export default function About() {
             <div className="gold-divider !mx-0 mb-8" />
             <p className="section-subtext mb-6">
               Born from a deep passion for beauty and self-care, iSalon represents
-              a new standard of luxury in Indiranagar. As a proudly women-owned salon,
-              we bring feminine intuition, warmth, and meticulous attention to detail
+              a new standard of luxury in Indiranagar. Founded by Mr. Sanjay,
+              our studio brings unparalleled expertise, warmth, and meticulous attention to detail
               to every service we offer.
             </p>
             <p className="section-subtext mb-10">
