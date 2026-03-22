@@ -42,6 +42,10 @@ const jsonLd = {
   "image": "https://isalon-web.pages.dev/images/hemarai.jpg",
   "@id": "https://isalon-web.pages.dev",
   "url": "https://isalon-web.pages.dev",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=100087047628991",
+    "https://www.instagram.com/isalonindiranagar"
+  ],
   "telephone": "+919902508399",
   "priceRange": "$$$",
   "address": {

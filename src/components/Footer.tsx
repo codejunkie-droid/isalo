@@ -100,7 +100,9 @@ export default function Footer() {
           <div className="flex gap-5">
             {/* Social Icons - Instagram */}
             <a
-              href="#"
+              href="https://www.instagram.com/isalonindiranagar"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-[var(--color-gold)]"
               style={{ border: "1px solid var(--color-warm-gray)" }}
               aria-label="Instagram"
@@ -112,7 +114,9 @@ export default function Footer() {
             </a>
             {/* Facebook */}
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=100087047628991"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-[var(--color-gold)]"
               style={{ border: "1px solid var(--color-warm-gray)" }}
               aria-label="Facebook"
