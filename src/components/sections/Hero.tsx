@@ -25,18 +25,18 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6 pt-20">
-        {/* Tagline */}
-        <motion.p
+        {/* Main SEO Heading */}
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 2.6 }}
-          className="section-label mb-6 !text-white/90 drop-shadow-sm"
+          className="section-label mb-6 !text-white/90 drop-shadow-sm font-bold"
         >
-          Indiranagar&apos;s Finest Salon Experience
-        </motion.p>
+          Best Salon in Bangalore
+        </motion.h1>
 
-        {/* Main Heading */}
-        <motion.h1
+        {/* Aesthetic Subheading (previously h1) */}
+        <motion.h2
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 2.8, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -48,7 +48,7 @@ export default function Hero() {
           Luxury Redefined.
           <br />
           <span style={{ color: "var(--color-gold)" }}>Beauty</span> Perfected.
-        </motion.h1>
+        </motion.h2>
 
         {/* Subheading */}
         <motion.p
