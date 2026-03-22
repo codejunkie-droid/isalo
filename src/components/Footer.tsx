@@ -9,16 +9,24 @@ export default function Footer() {
       <div className="max-w-[1200px] mx-auto">
         <div className="grid md:grid-cols-3 gap-10 mb-12">
           {/* Brand */}
-          <div>
-            <h3
-              className="text-2xl tracking-[0.15em] mb-2"
-              style={{
-                fontFamily: "var(--font-serif)",
-                color: "var(--color-cream)",
-              }}
-            >
-              iSalon
-            </h3>
+          <div className="flex flex-col items-start gap-4">
+            <div className="relative w-16 h-16 overflow-hidden rounded-full border border-[var(--color-gold)]/30">
+              <img
+                src="/images/isalon-logo.jpg"
+                alt="iSalon Logo"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <h3
+                className="text-2xl tracking-[0.15em] mb-1"
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  color: "var(--color-cream)",
+                }}
+              >
+                iSalon
+              </h3>
             <p
               className="text-[0.55rem] tracking-[0.2em] uppercase mb-4"
               style={{ color: "var(--color-gold)" }}
@@ -31,6 +39,7 @@ export default function Footer() {
             >
               Indiranagar&apos;s premier luxury salon experience. Proudly women-owned.
             </p>
+            </div>
           </div>
 
           {/* Quick Links */}

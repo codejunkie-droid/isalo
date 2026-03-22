@@ -43,25 +43,34 @@ export default function Navbar() {
       >
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex flex-col items-start group">
-            <span
-              className="text-xl md:text-2xl tracking-[0.15em] transition-colors duration-300"
-              style={{
-                fontFamily: "var(--font-serif)",
-                color: scrolled ? "var(--color-charcoal)" : "var(--color-charcoal)",
-              }}
-            >
-              iSalon
-            </span>
-            <span
-              className="text-[0.55rem] tracking-[0.2em] uppercase transition-colors duration-300"
-              style={{
-                fontFamily: "var(--font-sans)",
-                color: "var(--color-gold)",
-              }}
-            >
-              ಇಸಲೋನ್
-            </span>
+          <a href="#" className="flex items-center gap-3 group">
+            <div className="relative w-10 h-10 md:w-12 md:h-12 overflow-hidden rounded-full border border-[var(--color-gold)]">
+              <img
+                src="/images/isalon-logo.jpg"
+                alt="iSalon Logo"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div className="flex flex-col">
+              <span
+                className="text-lg md:text-xl tracking-[0.15em] leading-none"
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  color: "var(--color-charcoal)",
+                }}
+              >
+                iSalon
+              </span>
+              <span
+                className="text-[0.45rem] tracking-[0.2em] uppercase mt-1"
+                style={{
+                  fontFamily: "var(--font-sans)",
+                  color: "var(--color-gold)",
+                }}
+              >
+                ಇಸಲೋನ್
+              </span>
+            </div>
           </a>
 
           {/* Desktop Nav */}

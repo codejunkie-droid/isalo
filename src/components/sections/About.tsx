@@ -21,7 +21,7 @@ export default function About() {
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
               <Image
-                src="/images/about.png"
+                src="/images/salon-1.jpg"
                 alt="iSalon interior ambiance"
                 fill
                 className="object-cover"

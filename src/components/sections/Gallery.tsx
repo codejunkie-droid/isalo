@@ -5,12 +5,14 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 
 const gallery = [
-  { src: "/images/hero.png", alt: "Luxury salon interior", label: "Interior" },
-  { src: "/images/gallery-hairstyling.png", alt: "Professional hair styling", label: "Hair Styling" },
-  { src: "/images/gallery-nailart.png", alt: "Premium nail art", label: "Nail Art" },
-  { src: "/images/gallery-facial.png", alt: "Korean Glass Facial treatment", label: "Skincare" },
-  { src: "/images/about.png", alt: "Salon vanity and products", label: "Ambience" },
-  { src: "/images/stylist.png", alt: "Our stylist at work", label: "Our Team" },
+  { type: "image", src: "/images/salon-1.jpg", alt: "Luxury salon interior", label: "Studio" },
+  { type: "video", src: "/images/salon-video-1.mp4", alt: "Salon experience video", label: "Experience" },
+  { type: "image", src: "/images/nailart-1.jpg", alt: "Premium nail art design", label: "Nail Art" },
+  { type: "image", src: "/images/treatment-1.jpg", alt: "Professional treatment session", label: "Lash & Brows" },
+  { type: "video", src: "/images/salon-video-2.mp4", alt: "Nail art process", label: "Artistry" },
+  { type: "image", src: "/images/nailart-2.jpg", alt: "Elegant manicure", label: "Nail Art" },
+  { type: "image", src: "/images/salon-2.jpg", alt: "Modern salon station", label: "Studio" },
+  { type: "image", src: "/images/nailart-3.jpg", alt: "Custom nail design", label: "Nail Art" },
 ];
 
 export default function Gallery() {
@@ -69,13 +71,33 @@ export default function Gallery() {
                 data-hover
               >
                 <div className={`relative w-full ${i === 0 ? "h-full min-h-[300px] md:min-h-0" : "h-full"}`}>
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                    quality={80}
-                  />
+                  {img.type === "video" ? (
+                    <div className="relative w-full h-full">
+                      <video
+                        src={img.src}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        muted
+                        loop
+                        onMouseOver={(e) => e.currentTarget.play()}
+                        onMouseOut={(e) => e.currentTarget.pause()}
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <path d="M8 5v14l11-7z" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      quality={80}
+                    />
+                  )}
                 </div>
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.7)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
@@ -112,13 +134,22 @@ export default function Gallery() {
               transition={{ duration: 0.3 }}
               className="relative w-[85vw] h-[80vh]"
             >
-              <Image
-                src={gallery[lightbox].src}
-                alt={gallery[lightbox].alt}
-                fill
-                className="object-contain rounded-lg"
-                quality={95}
-              />
+              {gallery[lightbox].type === "video" ? (
+                <video
+                  src={gallery[lightbox].src}
+                  controls
+                  autoPlay
+                  className="w-full h-full object-contain rounded-lg shadow-2xl"
+                />
+              ) : (
+                <Image
+                  src={gallery[lightbox].src}
+                  alt={gallery[lightbox].alt}
+                  fill
+                  className="object-contain rounded-lg shadow-2xl"
+                  quality={95}
+                />
+              )}
             </motion.div>
             {/* Close button */}
             <button
