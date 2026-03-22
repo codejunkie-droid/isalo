@@ -10,13 +10,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-10 mb-12">
           {/* Brand */}
           <div className="flex flex-col items-start gap-4">
-            <div className="relative w-20 h-20 md:w-24 md:h-24 overflow-hidden rounded-full bg-white border border-[var(--color-gold)]/50">
-              <img
-                src="/images/logo3.jpeg"
-                alt="iSalon Logo"
-                className="w-full h-full object-contain"
-              />
-            </div>
+            <img
+              src="/images/logo2.jpeg"
+              alt="iSalon Logo"
+              className="h-16 md:h-20 w-auto object-contain"
+              style={{ mixBlendMode: 'screen' }}
+            />
             <p
               className="text-[0.55rem] tracking-[0.2em] uppercase mb-4"
               style={{ color: "var(--color-gold)" }}
